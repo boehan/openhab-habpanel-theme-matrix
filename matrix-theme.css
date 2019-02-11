@@ -239,7 +239,7 @@ body {
 
 .section {
   width: 100%;
-  background: #19201c;
+  background: #141414;
   padding: 20px 20px 10px 20px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -255,8 +255,6 @@ body {
   clear: left;
   overflow: auto;
   zoom: 1;
-}
-.section .title  {
   font-size: 30px;
   font-weight: 100;
   text-transform: uppercase;
@@ -287,6 +285,18 @@ body {
   margin-left: 20px;
   font-weight: 300;
   margin-top: 5px;
+}
+.section.top {
+  margin: 0px;
+}
+.section.top table {
+  width: 100%;
+}
+.section.top td {
+  width: 33%;
+}
+.section .title.top {
+  padding-bottom: 0px;
 }
 .section .sectionIconContainer {
   position: relative;
