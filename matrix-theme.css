@@ -847,3 +847,40 @@ body {
   left: -1px;
   border-top: 1px solid #5f7167;
 }
+.section .bigDash .forecast {
+/*    height: 202px; */
+  width: 100%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section .bigDash .forecast .day {
+  width: 31%;
+  display: inline-block;
+  vertical-align: top;
+}
+.section .bigDash .forecast .day table {
+  width: 90%;
+  height: 160px;
+  border-bottom: 1px solid #565f58;
+  text-align: center;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.section .bigDash .forecast .icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section .bigDash .forecast .value {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  color: white;
+}
