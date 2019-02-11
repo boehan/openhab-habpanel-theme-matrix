@@ -347,6 +347,8 @@ body {
   padding-right: 25px;
   float: left;
   color: white;
+  font-weight: 300;
+  font-size: 16px;
 }
 .section .bigDash .top .icon {
   width: 80px;
@@ -622,7 +624,7 @@ body {
 .section .control svg {
   stroke: #26bf75;
   fill: #26bf75;
-  padding: 8px;
+  padding: 0px;
 }
 .section .bigDash .value {
   font-weight: 100;
