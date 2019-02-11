@@ -236,7 +236,6 @@ body {
   }
 }
 
-
 .section {
   width: 100%;
   background: #141414;
@@ -311,7 +310,7 @@ body {
 .section .sectionIcon svg {
   stroke: #565f58;
   fill: #565f58;
-  stroke-width: 1px;
+  stroke-width: 0px;
 }
 .section .bigDash {
   float:left;
@@ -373,10 +372,9 @@ body {
   top: 40px;
   left: -26px;
 }
-
 .section .bigDash .trend svg {
   stroke: #565f58;
-  stroke-width: 2px;
+  stroke-width: 0px;
 }
 .section .bigDash .trend.up svg {
   stroke: #26bf75;
@@ -404,8 +402,6 @@ body {
   }
 }
 
-
-
 .graph img {
   border-bottom: 1px solid #565f58;
 }
@@ -427,7 +423,7 @@ body {
   float: left;
 }
 .section .icon svg, .section .control svg {
-  stroke-width: 2px;
+  stroke-width: 0px;
 }
 .section .icon.off svg {
   stroke: #565f58;
@@ -631,7 +627,7 @@ body {
   font-weight: 100;
 }
 .section .bigDash .top .icon svg{
-  stroke-width: 1px;
+  stroke-width: 0px;
 }
 
 .section .bigDash .main {
