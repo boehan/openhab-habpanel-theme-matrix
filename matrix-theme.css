@@ -162,6 +162,10 @@ body {
     width: 100%;
     float: left;
   }
+  .section .widget.full {
+    width: 100%;
+    float: left;
+  }
   .section .bigDash {
     margin-left: auto;
     width: 100%;
@@ -185,6 +189,10 @@ body {
   }
   .section .widget.wide {
     width: 50%;
+    float: left;
+  }
+  .section .widget.full {
+    width: 100%;
     float: left;
   }
   .section .bigDash {
@@ -211,6 +219,10 @@ body {
   }
   .section .widget.wide {
     width: 33%;
+    float: left;
+  }
+  .section .widget.full {
+    width: 100%;
     float: left;
   }
   .section .bigDash {
