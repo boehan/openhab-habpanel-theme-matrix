@@ -884,3 +884,45 @@ body {
   font-size: 16px;
   color: white;
 }
+.section .widget .controlGroup .value {
+  clear: right;
+  text-align: right;
+  padding-top: 6px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: #26bf75;
+  font-weight: bold;
+}
+.section .control.wide {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #393d3a;
+  width: 70px;
+  height: 40px;
+  float: right;
+  border-radius: 10px;
+  text-align: center;
+  color: #26bf75;
+  font-weight: bold;
+}
+.section .control.wide.on {
+  background-color: #4a6b52;
+}
+.rzslider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 90%;
+  text-align: center;
+}
+.rzslider .rz-pointer {
+  width: 16px;
+  height: 16px;
+  top: -6px;
+  background-color: #c2c7c3;
+}
+.rzslider .rz-pointer:after {
+  display: none;
+}
