@@ -939,3 +939,17 @@ body {
   border-bottom: 1px solid #565f58;
   width: 90%;
 }
+.section .control.main {
+  background-color: transparent;
+  color: #565f58;
+  border: 1px solid #565f58;
+  float: right;
+}
+.section .control.main.on {
+  border-color: #26bf75;
+}
+.section .control.main svg {
+  stroke: #565f58;
+  fill: #565f58;
+  padding: 0px;
+}
