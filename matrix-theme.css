@@ -926,3 +926,16 @@ body {
 .rzslider .rz-pointer:after {
   display: none;
 }
+.section .bigDash .picture {
+  text-align: center;
+  clear: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 145px;
+  border-bottom: 1px solid #565f58;
+  width: 90%;
+}
