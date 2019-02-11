@@ -953,3 +953,12 @@ body {
   fill: #565f58;
   padding: 0px;
 }
+.section .control .notification svg {
+  stroke: #bf3b26;
+  fill: #bf3b26;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  overflow: visible;
+  position: absolute;
+}
