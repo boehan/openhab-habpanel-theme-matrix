@@ -313,7 +313,7 @@ body {
   stroke-width: 0px;
 }
 .section .bigDash {
-  float:left;
+  float: left;
   padding-bottom: 15px;
   padding-top: 10px;
 }
@@ -345,7 +345,7 @@ body {
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 25px;
-  float:left;
+  float: left;
   color: white;
 }
 .section .bigDash .top .icon {
@@ -404,6 +404,10 @@ body {
 
 .graph img {
   border-bottom: 1px solid #565f58;
+}
+.graph iframe {
+  border-bottom: 1px solid #565f58;
+  overflow: hidden;
 }
 .graph .legend {
   font-size: 10px;
@@ -468,7 +472,6 @@ body {
     transform: rotate(180deg);
   }
 }
-
 .section .widget select {
   background: rgba(0,0,0,0);
   border: 0px;
@@ -476,7 +479,6 @@ body {
   text-align: right;
   text-align-last: right;
 }
-
 .section .widget.disabled {
   opacity: 0.2;
 }
@@ -501,8 +503,6 @@ body {
   fill:  #565f58;
   -webkit-transition: 0.2s;
 }
-
-
 .section .widget.wide .name {
   width: 250px;
 }
@@ -521,7 +521,7 @@ body {
 }
 .section .widget .graph {
   text-align: center;
-  padding:20px;
+  padding: 20px;
   margin-left: 10px;
 }
 .section .widget .appLogo {
@@ -536,9 +536,9 @@ body {
   font-size: 25px;
   font-weight: 300;
 }
-
 .section .widget .sceneGroup {
   float: right;
+  text-align: right;
   font-size: 14px;
   text-transform: uppercase;
   color: #565f58;
@@ -550,9 +550,10 @@ body {
   border-radius: 5px;
   padding: 6px 6px 6px 6px;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   width: 133px;
   float: right;
+  display: inline-block;
   margin-left: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -563,7 +564,6 @@ body {
   border: 1px solid #393d3a;
   color: #26bf75;
 }
-
 .section .widget .valueGroup {
   padding-right: 20px;
   min-height: 35px;
@@ -594,7 +594,7 @@ body {
   padding-right: 10px;
 }
 .section .widget.wide .controlGroup {
-  clear:left;
+  clear: left;
 }
 .section .control {
   margin-right: 5px;
@@ -608,6 +608,9 @@ body {
   color: #26bf75;
   line-height: 41px;
   font-weight: bold;
+  justify-content: center;
+  display: flex;
+  position: relative;
 }
 .section .control.on {
   background-color: #4a6b52;
@@ -621,22 +624,18 @@ body {
   fill: #26bf75;
   padding: 8px;
 }
-
-
 .section .bigDash .value {
   font-weight: 100;
 }
 .section .bigDash .top .icon svg{
   stroke-width: 0px;
 }
-
 .section .bigDash .main {
   font-size: 95px;
   letter-spacing: 0px;
   line-height: 110px;
-  float:left;
+  float: left;
   color: white;
-
 }
 .section .bigDash .decimals {
   font-size: 60px;
@@ -649,12 +648,10 @@ body {
 .section .bigDash .sub {
   font-size: 45px;
   color: #575f59;
-  display:inline;
+  display: inline;
   text-align: left;
   margin-left: -40px;
 }
-
-
 .batteryGroup {
   padding-left: 20px;
 }
@@ -664,7 +661,6 @@ body {
   box-sizing: border-box;
   padding: 10px 30px 10px 30px;
 }
-
 .battery .batteryShell {
   height: 100%;
   box-sizing: border-box;
@@ -690,7 +686,6 @@ body {
   width: 100%;
   height: 40%;
 }
-
 .battery .batteryShell .batteryLevel {
   width: 75%;
   height: 100%;
@@ -711,9 +706,6 @@ body {
 .battery .batteryTip2.full {
   background: #11de7b;
 }
-
-
-
 .fuelGroup {
   padding-left: 20px;
 }
@@ -723,7 +715,6 @@ body {
   box-sizing: border-box;
   padding: 10px 30px 10px 30px;
 }
-
 .fuel .fuelShell {
   height: 100%;
   box-sizing: border-box;
@@ -748,7 +739,6 @@ body {
   width: 100%;
   height: 40%;
 }
-
 .fuel .fuelShell .fuelLevel {
   width: 75%;
   height: 100%;
@@ -759,36 +749,33 @@ body {
 .fuel .fuelShell .fuelLevel.low {
   background: repeating-linear-gradient( 90deg,  #ff2c0a,  #ff2c0a 20px,  #B82009 20px,  #B82009 21px );
 }
-
-
-
 .section .controls .music {
   width: 100%;
   float: right;
   padding-top: 15px;
 }
-.section .controls .music .cover {
-  width: 75px;
-  height: 75px;
+.section .controls .music .cover img {
+  width: 90px;
+  height: 90px;
   background-size: cover;
   margin-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   float: left;
 }
 .section .controls .music .track {
-  width:100%;
+  width: 100%;
   text-align: center;
   font-size: 20px;
   font-weight: 100;
   color: #26bf75;
 }
 .section .controls .music .artist {
-  width:100%;
+  width: 100%;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
   color: #565f58;
-  padding-top:3px;
+  padding-top: 3px;
   padding-bottom: 3px;
 }
 .section .controls .music .playback {
@@ -827,7 +814,6 @@ body {
   width: 150px;
   padding: 0px 10px 50px 0px;
 }
-
 .section .widget .name .hue {
   width: 10px;
   height: 10px;
@@ -835,8 +821,6 @@ body {
   margin-right: 7px;
   border-radius: 100%;
 }
-
-
 .section .hueSelect {
   position: absolute;
   height: 0px;
@@ -852,7 +836,6 @@ body {
 .section .hueSelect a:hover, .section .hueSelect a:active {
   border: 1px solid white;
   -webkit-transition: 0.2s;
-
 }
 .section .hueSelectOptions {
   position: relative;
