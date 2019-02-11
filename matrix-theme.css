@@ -136,7 +136,15 @@ body {
 .container {
   padding-top: 10px;
 }
-
+.box-content {
+  padding: 0px;
+}
+.box-content.slider {
+  padding: 10px;
+}
+.template-contents {
+  margin: 0px;
+}
 
 @media only screen {
   /* For mobile: */
