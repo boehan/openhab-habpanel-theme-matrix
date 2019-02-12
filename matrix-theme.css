@@ -625,6 +625,7 @@ body {
   stroke: #26bf75;
   fill: #26bf75;
   padding: 0px;
+  width: 100%;
 }
 .section .bigDash .value {
   font-weight: 100;
