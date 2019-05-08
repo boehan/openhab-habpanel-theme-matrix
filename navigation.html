@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-xs-7 col-sm-4">
+    <div class="title top">{{itemValue('HABPanel_Dashboard')}}</div>
+  </div>
+  <div class="col-xs-5 col-sm-2">
+    <div class="sectionIconContainer">
+      <div class="control main" ng-class="{true: 'on'}[itemValue('gLicht_Switch', true)=='ON']" ng-click="sendCmd('gLicht_Switch', 'OFF')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#lightbulb-off-outline"></use></svg></div>
+      <div class="control main" ng-class="{true: 'on'}[itemValue('gDevices_Switch', true)=='ON']" ng-click="sendCmd('gDevices_Switch', 'OFF')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#speaker-off"></use></svg></div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <div class="sectionIconContainer">
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='System']" ng-click="sendCmd('HABPanel_Dashboard', 'System')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#memory"></use></svg></div>
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='Heizung']" ng-click="sendCmd('HABPanel_Dashboard', 'Heizung')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#fire"></use></svg></div>
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='Lueftung']" ng-click="sendCmd('HABPanel_Dashboard', 'Lueftung')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#fan"></use></svg>
+        <div class="notification" ng-if="itemValue('Alarm_Lueftung', true) == 'ON'"><svg viewBox="-30 -55 100 50"><use xlink:href="/static/matrix-theme/material-icons.svg#alert-circle"></use></svg></div>
+      </div>
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='Musik']" ng-click="sendCmd('HABPanel_Dashboard', 'Musik')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#monitor-speaker"></use></svg></div>
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='Beleuchtung']" ng-click="sendCmd('HABPanel_Dashboard', 'Beleuchtung')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#lightbulb-on-outline"></use></svg></div>
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='Wetter']" ng-click="sendCmd('HABPanel_Dashboard', 'Wetter')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#weather-partlycloudy"></use></svg></div>
+      <div class="control" ng-class="{true: 'on'}[itemValue('HABPanel_Dashboard', true)=='Wohnung']" ng-click="sendCmd('HABPanel_Dashboard', 'Wohnung')"><svg viewBox="0 0 100 80"><use xlink:href="/static/matrix-theme/material-icons.svg#home-outline"></use></svg></div>
+    </div>
+  </div>
+</div>
