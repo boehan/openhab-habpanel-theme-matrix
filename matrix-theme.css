@@ -65,6 +65,10 @@
   --body-bg: #000000;
   --body-color: #a4a4a4;
   --primary-color: #26bf75;
+  --secondary-color1: #bf2670;
+  --secondary-color2: #bf7526;
+  --secondary-color3: #2670bf;
+  --warning-color: var(--secondary-color2);
   --box-bg: rgba(255, 255, 255, .01);
   --header-bg: var(--body-bg);
   --widget-design-bg: #191716;
@@ -264,7 +268,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 10px;
   padding-top: 10px;
-  color: #26bf75;
+  color: var(--primary-color);
   clear: both;
 }
 .section .title .name {
@@ -379,7 +383,7 @@ body {
   stroke-width: 0px;
 }
 .section .bigDash .trend.up svg {
-  stroke: #26bf75;
+  stroke: var(--primary-color);
   animation: upy 0.2s ease-in-out infinite alternate;
 }
 .section .bigDash .trend.down svg {
@@ -411,6 +415,10 @@ body {
   border-bottom: 1px solid #565f58;
   overflow: hidden;
 }
+.graph object {
+  border-bottom: 1px solid #565f58;
+  overflow: hidden;
+}
 .graph .legend {
   font-size: 10px;
   text-transform: uppercase;
@@ -435,8 +443,8 @@ body {
   fill: #565f58;
 }
 .section .icon.on svg {
-  stroke: #26bf75;
-  fill: #26bf75;
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
 }
 .section .icon.warn svg {
   stroke: #ff2c0a;
@@ -456,8 +464,8 @@ body {
   fill: #565f58;
 }
 .section .icon.on.wind svg {
-  stroke: #26bf75;
-  fill: #26bf75;
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
 }
 .section .icon.wind {
   animation: windy 0.5s ease-in-out infinite;
@@ -516,7 +524,7 @@ body {
   font-weight: 100;
 }
 .section .widget .name .value {
-  color: #26bf75;
+  color: var(--primary-color);
   font-weight: bold;
   text-align: left;
 }
@@ -529,10 +537,10 @@ body {
   width: 150px;
   margin-right: 20px;
   margin-left: auto;
-  fill: #26bf75;
+  fill: var(--primary-color);
   padding-top: 6px;
   height: 50px;
-  color: #26bf75;
+  color: var(--primary-color);
   text-align: right;
   font-size: 25px;
   font-weight: 300;
@@ -563,7 +571,7 @@ body {
 .section .widget .sceneGroup .scene.on {
   background-color: #393d3a;
   border: 1px solid #393d3a;
-  color: #26bf75;
+  color: var(--primary-color);
 }
 .section .widget .valueGroup {
   padding-right: 20px;
@@ -572,7 +580,7 @@ body {
 .section .widget .valueGroup .value {
   text-align: right;
   padding-top: 6px;
-  color: #26bf75;
+  color: var(--primary-color);
   font-weight: bold;
 }
 .section .widget .valueGroup .value.warning {
@@ -606,7 +614,7 @@ body {
   float: right;
   border-radius: 100%;
   text-align: center;
-  color: #26bf75;
+  color: var(--primary-color);
   line-height: 41px;
   font-weight: bold;
   justify-content: center;
@@ -621,8 +629,8 @@ body {
   -webkit-transition: 0.2s;
 }
 .section .control svg {
-  stroke: #26bf75;
-  fill: #26bf75;
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
   padding: 0px;
   width: 100%;
 }
@@ -691,7 +699,7 @@ body {
 .battery .batteryShell .batteryLevel {
   width: 75%;
   height: 100%;
-  background: repeating-linear-gradient( 90deg,  #11de7b,  #11de7b 20px,  #26bf75 20px,  #26bf75 21px );
+  background: repeating-linear-gradient( 90deg,  #11de7b,  #11de7b 20px,  var(--primary-color) 20px,  var(--primary-color) 21px );
   box-shadow: 0 0 20px 10px rgba(17, 222, 123, 0.25);
   border-radius: 10px 0px 0px 10px;
 }
@@ -744,7 +752,7 @@ body {
 .fuel .fuelShell .fuelLevel {
   width: 75%;
   height: 100%;
-  background: repeating-linear-gradient( 90deg,  #11de7b,  #11de7b 20px,  #26bf75 20px,  #26bf75 21px );
+  background: repeating-linear-gradient( 90deg,  #11de7b,  #11de7b 20px,  var(--primary-color) 20px,  var(--primary-color) 21px );
   /* box-shadow: 0 0 20px 10px rgba(17, 222, 123, 0.25); */
   border-radius: 10px 0px 0px 10px;
 }
@@ -769,7 +777,7 @@ body {
   text-align: center;
   font-size: 20px;
   font-weight: 100;
-  color: #26bf75;
+  color: var(--primary-color);
 }
 .section .controls .music .artist {
   width: 100%;
@@ -799,7 +807,7 @@ body {
   float: left;
 }
 .section .controls .music .playbackBarDone {
-  background: #26bf75;
+  background: var(--primary-color);
   height: 100%;
 }
 .section .controls .music .playbackBar {
@@ -880,11 +888,13 @@ body {
   margin-right: auto;
 }
 .section .bigDash .forecast .value {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 16px;
-  color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+  clear: none;
+}
+.section .bigDash .forecast .value:nth-child(n+2) {
+  color: #1d4d3b;
 }
 .section .widget .controlGroup .value {
   clear: right;
@@ -892,7 +902,7 @@ body {
   padding-top: 6px;
   margin-right: 5px;
   margin-bottom: 10px;
-  color: #26bf75;
+  color: var(--primary-color);
   font-weight: bold;
 }
 .section .control.wide {
@@ -904,7 +914,7 @@ body {
   float: right;
   border-radius: 10px;
   text-align: center;
-  color: #26bf75;
+  color: var(--primary-color);
   font-weight: bold;
 }
 .section .control.wide.on {
@@ -923,7 +933,7 @@ body {
   width: 16px;
   height: 16px;
   top: -6px;
-  background-color: #c2c7c3;
+  background-color: white;
 }
 .rzslider .rz-pointer:after {
   display: none;
@@ -948,7 +958,7 @@ body {
   float: right;
 }
 .section .control.main.on {
-  border-color: #26bf75;
+  border-color: var(--primary-color);
 }
 .section .control.main svg {
   stroke: #565f58;
@@ -956,8 +966,8 @@ body {
   padding: 0px;
 }
 .section .control .notification svg {
-  stroke: #bf3b26;
-  fill: #bf3b26;
+  stroke: var(--warning-color);
+  fill: var(--warning-color);
   padding: 0px;
   top: 0px;
   left: 0px;
